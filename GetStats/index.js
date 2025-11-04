@@ -1,6 +1,6 @@
 ﻿const {container} = require("../libs/db");
 
-const currencyDataFor = ["SOL", "USDC", "USDT", "BONK", "WBTC", "TBTC", "STRK", "ETH", "BTC", "CBTC"];
+const currencyDataFor = process.env.ASSETS.split(",");
 
 const CACHE_TIMEOUT = 60*1000;
 

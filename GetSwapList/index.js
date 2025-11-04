@@ -1,9 +1,9 @@
 ﻿const {container} = require("../libs/db");
 
-const currencyDataFor = ["SOL", "USDC", "USDT", "BONK", "WBTC", "TBTC", "STRK", "ETH", "BTC", "CBTC"];
-const excludeTokens = [];
+const currencyDataFor = process.env.ASSETS.split(",");
+const excludeTokens = process.env.EXCLUDE_ASSETS?.split(",") ?? [];
 
-const allowedChains = ["STARKNET", "SOLANA", "BOTANIX", "CITREA", "ALPEN"];
+const allowedChains = process.env.CHAINS.split(",");
 
 const HEX_REGEX = /[0-9a-f]+/i;
 

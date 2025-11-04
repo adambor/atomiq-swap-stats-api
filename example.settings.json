@@ -1,7 +1,9 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "COSMOS_CONECTION_STRING": "connection string to cosmos db"
+    "COSMOS_CONECTION_STRING": "connection string to cosmos db",
+    "CHAINS": "STARKNET,SOLANA,BOTANIX,CITREA,ALPEN",
+    "ASSETS": "SOL,USDC,USDT,BONK,WBTC,TBTC,STRK,ETH,BTC,CBTC"
   },
   "Host": {
     "LocalHttpPort": 7071,
